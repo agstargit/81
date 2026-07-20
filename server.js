@@ -140,6 +140,6 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`聚餐管理云端已启动： http://localhost:${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`聚餐管理云端已启动： http://0.0.0.0:${PORT}`);
 });
